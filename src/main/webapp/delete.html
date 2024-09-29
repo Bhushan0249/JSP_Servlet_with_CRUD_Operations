@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+      <div class="main">
+            <h1>delete registeration</h1>
+            <h3>Enter your delete credentials</h3>
+            <form action="delete" method="post">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="email" 
+                         placeholder="Enter your Email"  required>
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="pass"
+                         placeholder="Enter your Password" required>
+
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              delete
+                        </button>
+                  </div>
+            </form>
+            
+      </div>
+
+
+<!-- <form action="delete" method="post">
+
+<input type="email" placeholder="enter user" name="email"><br> <br><br>
+<input type="password" placeholder="enter password" name="pass"><br><br><br>
+<input type="submit"  value="delete">
+ -->
+</form>
+</body>
+</html>

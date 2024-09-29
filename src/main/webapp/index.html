@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <title>HTML Login Form</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+      <div class="main">
+            <h1>welcome to app</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="login" method="post">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="email" 
+                         placeholder="Enter your Email"  required>
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="pass"
+                         placeholder="Enter your Password" required>
+
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="register.html"
+                     style="text-decoration: none;">
+                        Create an account
+                  </a>
+            </p>
+      </div>
+
+	<!-- <form action="login" method="post">
+
+		<br /> enter email<input type="email"  name="email" /> <br />
+		<br /> enter password <input type="password"  name="pass" />
+		<br /> <br /> <input type="submit" value="login" />
+	</form>
+ -->
+	<!-- <a href="register.html">create account</a> -->
+
+</body>
+</html>

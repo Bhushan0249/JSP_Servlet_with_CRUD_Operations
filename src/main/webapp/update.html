@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .main h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Updatetion Form</h2>
+        <form action="update" method="post">
+            <label for="first">enter old Id:</label>
+            <input type="text" id="first" name="id" required />
+
+           
+            <label for="email">New Name:</label>
+            <input type="text" id="email" name="Nname" required />
+
+            
+
+            <label for="repassword"> New Email:</label>
+            <input type="Email" id="repassword" name="Nemail" required />
+            
+             <label for="repassword"> New Password:</label>
+            <input type="password" id="repassword" name="Npass" required />
+
+
+            <label for="gender">New Gender:</label>
+            <select id="gender" name="Ngender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+            <label for="mobile"> enter City:</label>
+            <input type="text"  name="Ncity"  />
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+
+  <!-- <form action="update" method="post">
+<input type="text" name="id" ><br>
+<input type="text" placeholder="enter new name" name="Nname"><br>
+<input type="Email" placeholder="enter new email" name="Nemail"><br>
+<input type="password" placeholder="enter new password" name="Npass"><br>
+<input type="text" placeholder="enter new gender" name="Ngender"><br>
+<input type="text" placeholder="enter new city" name="Ncity"><br>
+<input type="submit" value="update">
+   </form> -->
+</body>
+</html>
